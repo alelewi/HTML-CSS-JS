@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* -----------------header--------------- */
+.header{
+    position: absolute;
+    color:white;
+    left: 45%;
+    padding: 0rem 2rem ;
+    font-size: 1.5rem;
+    border: black solid 2px;
+    z-index: 0;
+}
+
+/* -----------sideNav----------- */
+.container{
+    box-sizing: border-box;
+    overflow-x:hidden;
+    z-index: 1;
+    transition: all 0.5s ;
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    min-width: 6rem; 
+    max-width: 13rem;
+    background-image: linear-gradient(to bottom right,green,blue);
+    opacity: 0.7;
+}
+
+.close-container{
+    box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    min-width: 0px;
+    background-color: rgb(56, 59, 57);
+    transition: all 0.5s ;
+    width: 0%;
+    
+}
+/* -------------close button------------------ */
+
+.menu-btn{
+    z-index:2 ;
+    position: absolute;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 0px; 
+}
+
+/* links in sideNav */
+ .link-in-navbar{
+    overflow-x: hidden;
+    z-index: 1;
+    position: relative;
+    text-decoration: none;
+    display: inherit;
+    font-family:sans-serif ;
+    min-width: 0px;
+    transition: width 0.2s;  
+}
+/* icons  facebook google youtube */
+.fab{
+    float: right;
+    z-index: 0;
+    margin-top: 0.2rem;
+}
+.fas{
+    float: right;
+    z-index: 0;
+    margin-top: 0.2rem;
+}
+/* ------------lists------------------- */
+.link-in-navbar:hover{
+    background-color:rgba(0, 0, 0, 0.281)
+}
+.link-in-navbar:visited{
+    text-decoration: none;
+}
+.link-in-navbar:active{
+    text-decoration: none;
+}
+.list{  
+    position:relative;
+    margin-top: 7rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+.list li {
+    z-index: 1;
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+}
+.list li a{
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: rgb(245, 239, 239);
+} 
+/* ---------------animation---bg----------- */
+.section{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg,#ee7752,#e73c7e,#23A605,#23d5ab);
+    background-size: 400% 400%; 
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+    0%{ 
+        background-position: 0% 50%;
+    }
+    50%{ 
+        background-position: 100% 50%;
+    }
+    100%{ 
+        background-position: 0% 50%;
+    }
+};
+
