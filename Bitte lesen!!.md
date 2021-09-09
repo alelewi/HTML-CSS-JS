@@ -1,3 +1,3 @@
 # HTML-CSS-JS
 manche sachen sehen offline anders aus deswegen besuchen Sie meine Webseite online
-wwww.google.com
+www.google.com
